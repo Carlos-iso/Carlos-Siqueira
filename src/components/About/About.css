@@ -1,0 +1,121 @@
+.about-section {
+  position: relative;
+  z-index: 2;
+  padding: 0 0 80px;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: 300px 1fr auto;
+  gap: 48px;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  padding-right: 48px;
+}
+
+.about-photo-wrap {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 45%, rgba(0, 230, 118, 0.22) 0%, transparent 65%);
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: -30px;
+}
+
+.about-text {
+  padding: 40px 0;
+}
+
+.about-title {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.about-desc {
+  color: var(--text-2);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 440px;
+}
+
+.about-sign {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 2.6rem;
+  color: var(--text);
+  margin-top: 12px;
+  line-height: 1;
+}
+
+.about-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 0 40px 40px;
+  border-left: 1px solid var(--border);
+}
+
+.about-points li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.9rem;
+  color: var(--text-2);
+  max-width: 220px;
+}
+
+.about-icon {
+  color: var(--accent);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .about-card {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 28px 32px;
+    text-align: center;
+  }
+
+  .about-photo-wrap {
+    margin: 0 -28px;
+  }
+
+  .about-photo {
+    max-width: 220px;
+  }
+
+  .about-desc {
+    margin: 0 auto;
+  }
+
+  .about-text {
+    padding: 28px 0;
+  }
+
+  .about-points {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding: 28px 0 0;
+    align-items: center;
+  }
+
+  .about-points li {
+    max-width: none;
+  }
+}

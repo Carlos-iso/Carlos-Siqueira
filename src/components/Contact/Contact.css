@@ -1,0 +1,115 @@
+.contact-section {
+  padding: 120px 0;
+  border-top: 1px solid var(--border);
+}
+
+.contact-card {
+  position: relative;
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-lg);
+  padding: 64px;
+  background: var(--accent-dim);
+  overflow: hidden;
+}
+
+.contact-glow {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 230, 118, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.contact-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.contact-sub {
+  font-size: 1rem;
+  color: var(--text-2);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.contact-link:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-2);
+}
+
+.contact-link.primary {
+  border-color: var(--accent-border);
+  background: var(--accent-dim);
+}
+
+.contact-link-icon {
+  font-size: 1.25rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.contact-link--wide {
+  grid-column: 1 / -1;
+}
+
+.contact-link-svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.contact-link-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--text-3);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.contact-link-value {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.contact-cta {
+  display: inline-flex;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 0;
+  }
+
+  .contact-card {
+    padding: 32px 24px;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+}
