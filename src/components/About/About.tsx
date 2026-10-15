@@ -12,7 +12,14 @@ export default function About() {
       <div className="container">
         <div className="about-card">
           <div className="about-photo-wrap">
-            <img src="/carlos2.png" alt="Carlos Siqueira" className="about-photo" />
+            <img
+              src="/carlos2.webp"
+              alt="Carlos Siqueira"
+              className="about-photo"
+              width={464}
+              height={594}
+              loading="lazy"
+            />
           </div>
 
           <div className="about-text">

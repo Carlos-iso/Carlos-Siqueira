@@ -66,7 +66,14 @@ export default function Hero() {
 
         <div ref={rightRef} className="hero-right">
           <div className="hero-photo-glow" />
-          <img src="/carlos.png" alt="Carlos Siqueira" className="hero-photo" />
+          <img
+            src="/carlos.webp"
+            alt="Carlos Siqueira, desenvolvedor full stack"
+            className="hero-photo"
+            width={784}
+            height={1436}
+            fetchPriority="high"
+          />
           <p className="hero-tagline">
             Sites · Apps
             <br />

@@ -25,3 +25,6 @@ dist-ssr
 
 # Fotos pessoais de referência (não publicar)
 profile/
+
+# Variáveis de ambiente locais
+.env

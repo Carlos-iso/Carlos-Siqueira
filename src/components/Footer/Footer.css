@@ -80,6 +80,13 @@
   color: var(--text-3);
 }
 
+.footer-bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+}
+
 .footer-top {
   font-size: 0.8rem;
   color: var(--text-2);

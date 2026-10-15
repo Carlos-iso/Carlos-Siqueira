@@ -40,7 +40,7 @@ export default function Footer() {
             <ul>
               {services.map(s => (
                 <li key={s}>
-                  <a href="#services">{s}</a>
+                  <a href="/#services">{s}</a>
                 </li>
               ))}
             </ul>
@@ -78,7 +78,10 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} Carlos Siqueira · CarlosCoding</p>
-          <a href="#top" className="footer-top">Voltar ao topo ↑</a>
+          <div className="footer-bottom-links">
+            <a href="/privacidade" className="footer-top">Política de Privacidade</a>
+            <a href="#top" className="footer-top">Voltar ao topo ↑</a>
+          </div>
         </div>
       </div>
     </footer>

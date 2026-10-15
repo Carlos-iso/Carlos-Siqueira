@@ -2,13 +2,95 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Carlos Siqueira, desenvolvedor full stack. Sites, apps mobile, APIs e sistemas completos." />
-    <title>Carlos Siqueira · CarlosCoding</title>
+
+    <title>Carlos Siqueira · Desenvolvedor Full Stack | Sites, Apps e Sistemas</title>
+    <meta name="description" content="Carlos Siqueira, desenvolvedor full stack. Criação de sites, apps mobile, APIs e sistemas sob medida para empresas de todo o Brasil, do planejamento ao produto no ar." />
+    <meta name="author" content="Carlos Siqueira" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://carloscoding.kinetnode.com.br/" />
+    <meta name="theme-color" content="#080808" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="CarlosCoding" />
+    <meta property="og:url" content="https://carloscoding.kinetnode.com.br/" />
+    <meta property="og:title" content="Carlos Siqueira · Desenvolvedor Full Stack" />
+    <meta property="og:description" content="Sites, apps mobile, APIs e sistemas sob medida. Do planejamento ao produto no ar." />
+    <meta property="og:image" content="https://carloscoding.kinetnode.com.br/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Carlos Siqueira, desenvolvedor full stack" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Carlos Siqueira · Desenvolvedor Full Stack" />
+    <meta name="twitter:description" content="Sites, apps mobile, APIs e sistemas sob medida. Do planejamento ao produto no ar." />
+    <meta name="twitter:image" content="https://carloscoding.kinetnode.com.br/og-image.jpg" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Mrs+Saint+Delafield&display=swap" />
+
+    <link rel="preload" as="image" href="/carlos.webp" type="image/webp" fetchpriority="high" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://carloscoding.kinetnode.com.br/#carlos",
+            "name": "Carlos Siqueira",
+            "jobTitle": "Desenvolvedor Full Stack",
+            "url": "https://carloscoding.kinetnode.com.br/",
+            "image": "https://carloscoding.kinetnode.com.br/og-image.jpg",
+            "email": "mailto:carlosdev2022@gmail.com",
+            "telephone": "+55-87-92001-8359",
+            "knowsAbout": ["TypeScript", "Node.js", "React", "React Native", "NestJS", "PostgreSQL", "MongoDB", "Docker"],
+            "sameAs": [
+              "https://github.com/Carlos-iso",
+              "https://www.linkedin.com/in/carlosmanueldev",
+              "https://www.instagram.com/pognaveia"
+            ]
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://carloscoding.kinetnode.com.br/#servico",
+            "name": "CarlosCoding",
+            "url": "https://carloscoding.kinetnode.com.br/",
+            "image": "https://carloscoding.kinetnode.com.br/og-image.jpg",
+            "description": "Desenvolvimento de sites, apps mobile, APIs e sistemas sob medida.",
+            "founder": { "@id": "https://carloscoding.kinetnode.com.br/#carlos" },
+            "areaServed": { "@type": "Country", "name": "Brasil" },
+            "telephone": "+55-87-92001-8359",
+            "email": "carlosdev2022@gmail.com",
+            "serviceType": ["Criação de sites", "Desenvolvimento de apps mobile", "Desenvolvimento de APIs", "Sistemas sob medida"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://carloscoding.kinetnode.com.br/#site",
+            "url": "https://carloscoding.kinetnode.com.br/",
+            "name": "CarlosCoding",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://carloscoding.kinetnode.com.br/#carlos" }
+          }
+        ]
+      }
+    </script>
+
     <style>body { margin: 0; background: #080808; }</style>
   </head>
   <body>
+    <noscript>
+      <h1>Carlos Siqueira · Desenvolvedor Full Stack</h1>
+      <p>Sites, apps mobile, APIs e sistemas sob medida. Contato: carlosdev2022@gmail.com · WhatsApp (87) 92001-8359.</p>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
