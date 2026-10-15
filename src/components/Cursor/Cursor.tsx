@@ -19,36 +19,30 @@ export default function Cursor() {
       }
     }
 
+    let frame = 0
     const animate = () => {
       ringX += (mouseX - ringX) * 0.12
       ringY += (mouseY - ringY) * 0.12
       if (ringRef.current) {
         ringRef.current.style.transform = `translate(${ringX - 16}px, ${ringY - 16}px)`
       }
-      requestAnimationFrame(animate)
+      frame = requestAnimationFrame(animate)
     }
 
-    const onEnterText = () => {
-      ringRef.current?.classList.add('expand')
-      dotRef.current?.classList.add('hide')
-    }
-
-    const onLeaveText = () => {
-      ringRef.current?.classList.remove('expand')
-      dotRef.current?.classList.remove('hide')
+    const onOver = (e: MouseEvent) => {
+      const interactive = (e.target as Element).closest('a, button')
+      ringRef.current?.classList.toggle('expand', !!interactive)
+      dotRef.current?.classList.toggle('hide', !!interactive)
     }
 
     document.addEventListener('mousemove', onMove)
+    document.addEventListener('mouseover', onOver)
     animate()
-
-    const textEls = document.querySelectorAll('h1, h2, h3, p, a, button, li')
-    textEls.forEach(el => {
-      el.addEventListener('mouseenter', onEnterText)
-      el.addEventListener('mouseleave', onLeaveText)
-    })
 
     return () => {
       document.removeEventListener('mousemove', onMove)
+      document.removeEventListener('mouseover', onOver)
+      cancelAnimationFrame(frame)
     }
   }, [])
 

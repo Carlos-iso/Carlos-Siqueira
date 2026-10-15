@@ -1,5 +1,6 @@
 import './Footer.css'
 import { WHATSAPP_DISPLAY, WHATSAPP_URL, WhatsAppIcon } from '../WhatsApp/whatsapp'
+import { GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon } from '../Icons/icons'
 
 const services = [
   'Sites & Landing Pages',
@@ -15,11 +16,11 @@ const openSource = [
 ]
 
 const contacts = [
-  { icon: <WhatsAppIcon className="footer-wa-icon" />, label: WHATSAPP_DISPLAY, href: WHATSAPP_URL },
-  { icon: '✉', label: 'carlosdev2022@gmail.com', href: 'mailto:carlosdev2022@gmail.com' },
-  { icon: '◈', label: 'GitHub', href: 'https://github.com/Carlos-iso' },
-  { icon: '◻', label: 'LinkedIn', href: 'https://www.linkedin.com/in/carlosmanueldev' },
-  { icon: '◉', label: '@pognaveia', href: 'https://www.instagram.com/pognaveia' },
+  { icon: <WhatsAppIcon className="footer-icon-svg" />, label: WHATSAPP_DISPLAY, href: WHATSAPP_URL },
+  { icon: <MailIcon className="footer-icon-svg" />, label: 'carlosdev2022@gmail.com', href: 'mailto:carlosdev2022@gmail.com' },
+  { icon: <GitHubIcon className="footer-icon-svg" />, label: 'GitHub', href: 'https://github.com/Carlos-iso' },
+  { icon: <LinkedInIcon className="footer-icon-svg" />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/carlosmanueldev' },
+  { icon: <InstagramIcon className="footer-icon-svg" />, label: '@pognaveia', href: 'https://www.instagram.com/pognaveia' },
 ]
 
 export default function Footer() {

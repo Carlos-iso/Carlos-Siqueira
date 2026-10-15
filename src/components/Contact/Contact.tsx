@@ -1,5 +1,6 @@
 import './Contact.css'
 import { WHATSAPP_DISPLAY, WHATSAPP_URL, WhatsAppIcon } from '../WhatsApp/whatsapp'
+import { GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon } from '../Icons/icons'
 
 export default function Contact() {
   return (
@@ -31,7 +32,7 @@ export default function Contact() {
             </a>
 
             <a href="mailto:carlosdev2022@gmail.com" className="contact-link">
-              <span className="contact-link-icon">✉</span>
+              <MailIcon className="contact-link-icon contact-link-svg" />
               <div>
                 <p className="contact-link-label">E-mail</p>
                 <p className="contact-link-value">carlosdev2022@gmail.com</p>
@@ -44,7 +45,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <span className="contact-link-icon">◈</span>
+              <GitHubIcon className="contact-link-icon contact-link-svg" />
               <div>
                 <p className="contact-link-label">GitHub</p>
                 <p className="contact-link-value">github.com/Carlos-iso</p>
@@ -57,7 +58,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <span className="contact-link-icon">◻</span>
+              <LinkedInIcon className="contact-link-icon contact-link-svg" />
               <div>
                 <p className="contact-link-label">LinkedIn</p>
                 <p className="contact-link-value">carlosmanueldev</p>
@@ -70,7 +71,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <span className="contact-link-icon">◉</span>
+              <InstagramIcon className="contact-link-icon contact-link-svg" />
               <div>
                 <p className="contact-link-label">Instagram</p>
                 <p className="contact-link-value">@pognaveia</p>

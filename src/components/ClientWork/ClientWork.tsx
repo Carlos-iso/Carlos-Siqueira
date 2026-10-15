@@ -75,7 +75,7 @@ export default function ClientWork() {
       <div className="container">
         <p className="section-label">// trabalhos para clientes</p>
         <h2 className="section-title">
-          Projetos que já <span className="gradient-text">entregamos.</span>
+          Projetos que já <span className="gradient-text">entreguei.</span>
         </h2>
         <p className="section-sub">
           Cada projeto começa entendendo o negócio, o público e o que precisa ser transmitido.
